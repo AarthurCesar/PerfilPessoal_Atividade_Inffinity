@@ -1,0 +1,150 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(#1e90ff 70%, #E2F6FD);
+    font-weight: 550;
+  
+    animation: revealDown 3s ease forwards;
+    clip-path: inset(0 0 100% 0); /* Esconde a parte de baixo */
+    transition: 0.5s ease;
+  }
+  
+  @keyframes revealDown {
+    to {
+      clip-path: inset(0 0 0 0); /* Revela tudo */
+    }
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 14vh;
+  }
+  
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 30px;
+    background-color: #f0f0f0;
+    
+  
+    transition: transform 0.5s ease;
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.1) rotate(14deg);
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-info p {
+    margin: 8px 0;
+  }
+  
+  .bio {
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+  
+  .bio > .bio-text {
+    text-align: left;
+  }
+  
+  .lists-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .programs-list,
+  .skills-list {
+    width: 48%;
+  }
+  
+  .programs-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .skills-list ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 900;
+  }
+  
+  .nip {
+    color: black;
+    font-weight: 900;
+  }
+  
+
+  .container-img-perfil{
+    display:flex
+
+  }
+
+  .menu{
+    background-color: #0141802a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    
+  }
+  .menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  .menu a:visited {
+    color: white;
+  }
+
+  .menu a:hover{
+    color: #1e5aff;
+  }
+
+  .botao{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .botao input{
+    background: #1E90FF;
+    border: none;
+    padding: 5px;
+
+  }
+
+  .botao input:hover{
+    background: #1E90FF;
+    border: none;
+    padding: 5px;
+    color: white;
+    transition: transform 0.5s ease;
+    transform: scale(1.1)
+
+  }
